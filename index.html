@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Убираем мерцание для модальных окон, сначала подгрузиться это свойство, потом из цсс перебьется на display: block;-->
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <title>My portfolio</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header class="mainHeader">
+        <div class="mainHeader__container container">
+            <nav class="mainHeader__navigation navigation">
+                <a href="#" class="navigation__logoLink">
+                    <img src="/img/goit-logo.svg" alt="logotype" width="100" height="30" class="navigation__logo">
+                </a>
+                <ul class="navigation__linkList navigationLinkList desctopElement">
+                    <li class="navigationLinkList__item">
+                        <a href="#aboutSection" class="navigationLinkList__link">About</a>
+                    </li>
+                    <li class="navigationLinkList__item">
+                        <a href="#personalProdjectsSection" class="navigationLinkList__link">Prodjects</a>
+                    </li>
+                    <li class="navigationLinkList__item">
+                        <a href="#calculatorSection" class="navigationLinkList__link">Cost calulator</a>
+                    </li>
+                    <li class="navigationLinkList__item">
+                        <a href="#contactsSection" class="navigationLinkList__link">Contacts</a>
+                    </li>
+                </ul>
+                <div class="navigation__container">
+                    <a href="#callbackSection" class="navigation__hireMeBtn">
+                        — Hire me
+                    </a>
+                    <a href="#" class="navigation__mobileMenu" id="mobileMenu">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FRONT PAGE -->
+    <section class="frontPage">
+        <div class="frontPage__container container">
+            <div class="frontPage__mainInfoWrapper">
+                <h1 class="frontPage__title">[Sergey Savchuk]</h1>
+                <h2 class="frontPage__profession title">
+                    <span class="frontPage__profession_name">{Frontend}</span>
+                    <span class="frontPage__profession_name">_DEVELOPER</span>
+                </h2>
+                <p class="frontPage__description descWhite">
+                    / Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium
+                    web
+                    apps
+                    for
+                    business
+                </p>
+                <img src="img/my-photo.jpg" alt="my photo" width="255" height="300"
+                    class="frontPage__myPhoto desctopElement" data-aos="fade-down" data-aos-delay="1500">
+                <a href="#personalProdjectsSection" class="frontPage__accentButton accBtn">
+                    See my recent works —
+                </a>
+            </div>
+            <div class="frontPage__containerMyInfo" data-aos="fade-left" data-aos-delay="1000">
+                <img src="img/my-photo.jpg" alt="my photo" width="255" height="300"
+                    class="frontPage__myPhoto mobileElement tabletElement ">
+                <div class="frontPage__containerAboutMe">
+                    <h3 class="frontPage__subtitleAboutMe subWhite mobileElement">About me in 2 minutes</h3>
+                    <h3 class="frontPage__subtitleAboutMe subWhite tabletElement">About me <br> in 2
+                        minutes</h3>
+                    <h3 class="frontPage__subtitleAboutMe subWhite desctopElement">About me <br> in 2
+                        minutes</h3>
+                    <button class="frontPage__videButton vidBtn" id="videButton">
+                        PLAY
+                    </button>
+                </div>
+            </div>
+            <img src="img/laptop.svg" alt="laptop icon" width="250" height="235" class="frontPage__laptopIcon">
+            <div class="frontPage__experienceWrapper" data-aos="fade-right" data-aos-delay="500">
+                <div class="frontPage__experienceConteiner experience">
+                    <h3 class="experience__title subWhite">My Coding Skills & Experience</h3>
+                    <ul class="experience__list">
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">Html</p>
+                        </li>
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">CSS</p>
+                        </li>
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">JavaScript</p>
+                        </li>
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">React</p>
+                        </li>
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">Node</p>
+                        </li>
+                        <li class="experience__item">
+                            <ul class="experiesce__iconsList experienceIconsList">
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                                <li class="experienceIconsList__icon"></li>
+                            </ul>
+                            <p class="experience__text">React Native</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--ABOUT-->
+    <section class="aboutSection" id="aboutSection">
+        <div class="aboutSection__container container">
+            <div class="aboutSection__containerLeft">
+                <h3 class="aboutSection__title title" data-aos="fade-right" data-aos-delay="500">I code things from
+                    scratch_</h3>
+                <p class="aboutSection__descriptionMobile mobileElement" data-aos="fade-right" data-aos-delay="1000">
+                    <span class="aboutSection__descriptionMobile_black">[and help to</span>
+                    <span class="aboutSection__descriptionMobile_black">create great web</span>
+                    <span class="aboutSection__descriptionMobile_black">apps]</span>
+                </p>
+                <p class="aboutSection__descriptionTable tabletElement desctopElement" data-aos="fade-right"
+                    data-aos-delay="1000">
+                    <span class="aboutSection__descriptionTable_black">[and help to create</span>
+                    <span class="aboutSection__descriptionTable_black">great webapps]</span>
+                </p>
+                <div class="aboutSection__imgContainer">
+                    <p class="aboutSection__imgText">
+                        WEB
+                        <img src="img/web-apps-laptop.png" alt="web apps laptop" class="aboutSection__img" />
+                    </p>
+                </div>
+                <p class="aboutSection__text" data-aos="fade-right" data-aos-delay="1100">
+                    / I will help you to create a high-performance Landing Page, functional
+                    corporate website for your business, interactive web app for SaaS,
+                    startup, or other services.
+                </p>
+                <p class="aboutSection__text" data-aos="fade-right" data-aos-delay="1200">
+                    / My specialization is front-end development — client side of the web. But
+                    I also have full-stack developer experience.
+                </p>
+
+            </div>
+            <div class="aboutSection__projects desctopElement">
+                <div class="aboutSection__projectsBar">
+                    <p class="aboutSection__projectsCount">10+</p>
+                </div>
+                <p class="aboutSection__projectsText">completed projects</p>
+            </div>
+        </div>
+    </section>
+    <!--PERSONAL PRODJECTS-->
+    <section class="personalProdjects" id="personalProdjectsSection">
+        <div class="personalProdjects__container container">
+            <h3 class="personalProdjects__title title" data-aos="fade-right" data-aos-delay="500">My personal _projects
+            </h3>
+
+            <ul class="personalProdjects__list">
+                <li class="personalProdjects__item" data-aos="fade-right" data-aos-delay="750">
+                    <div class="personalProdjects__imgContainer">
+                        <div class="personalProdjects__itemDotsContainer">
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                        </div>
+                        <img src="img/projects/personal/full-stack.jpg" alt="full stack website" width="560"
+                            height="307" class="personalProdjects__image">
+                    </div>
+                    <p class="personalProdjects__nameOfProdject">
+                        Technology: HTML5, CSS3, JS
+                    </p>
+                    <button class="personalProdjects__btn accBtn" id="personalProjectFullStackBtn">More details
+                        —</button>
+                </li>
+                <li class="personalProdjects__item" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="personalProdjects__imgContainer">
+                        <div class="personalProdjects__itemDotsContainer">
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                        </div>
+                        <img src="img/projects/personal/wedding.jpg" alt="wedding website" width="560" height="307"
+                            class="personalProdjects__image">
+                    </div>
+                    <p class="personalProdjects__nameOfProdject">
+                        Technology: HTML, CSS, JavaScript, PHP
+                    </p>
+                    <button class="personalProdjects__btn accBtn" id="personalProjectWeddingProjectBtn">More details
+                        —</button>
+                </li>
+                <li class="personalProdjects__item" data-aos="fade-right" data-aos-delay="850">
+                    <div class="personalProdjects__imgContainer">
+                        <div class="personalProdjects__itemDotsContainer">
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                        </div>
+                        <img src="img/projects/personal/pro-test.jpg" alt="pro test website" width="560" height="307"
+                            class="personalProdjects__image">
+                    </div>
+                    <p class="personalProdjects__nameOfProdject">
+                        Technology: React.js, Node.js
+                    </p>
+                    <button class="personalProdjects__btn accBtn" id="personalProjecProTestBtn">More details
+                        —</button>
+                </li>
+                <li class="personalProdjects__item" data-aos="fade-left" data-aos-delay="1050">
+                    <div class="personalProdjects__imgContainer">
+                        <div class="personalProdjects__itemDotsContainer">
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                            <div class="personalProdjects__itemDots"></div>
+                        </div>
+                        <img src="img/projects/personal/goit.jpg" alt="goit website" width="560" height="307"
+                            class="personalProdjects__image">
+                    </div>
+                    <p class="personalProdjects__nameOfProdject">
+                        Technology: HTML, CSS, JavaScript, Wordpress
+                    </p>
+                    <button class="personalProdjects__btn accBtn" id="personalProjecGoitBtn">More details —</button>
+                </li>
+            </ul>
+    </section>
+    <!--TEAM PRODJECTS-->
+    <section class="teamProdjects" id="teamProdjectsSection">
+        <div class="teamProdjects__container container">
+            <span class="teamProdjects__titleBackground">TEAM</span>
+            <h3 class="teamProdjects__title title" data-aos="fade-right" data-aos-delay="500">
+                Teamwork _projects
+            </h3>
+
+            <ul class="teamProdjects__list">
+                <li class="teamProdjects__item" data-aos="fade-right" data-aos-delay="750">
+                    <div class="teamProdjects__imgContainer">
+                        <div class="teamProdjects__imgDotsContainer">
+                            <div class="teamProdjects__dots"></div>
+                            <div class="teamProdjects__dots"></div>
+                            <div class="teamProdjects__dots"></div>
+                        </div>
+                        <img src="img/projects/team/questify.jpg" alt="quetify app" width="560" height="306"
+                            class="teamProdjects__image">
+                    </div>
+                    <p class="teamProdjects__nameOfProdject">
+                        Technology: React.js, Node.js
+                    </p>
+                    <button class="teamProdjects__btn accBtn" id="personalProjecQuestifyBtn">More details —</button>
+                </li>
+                <li class="teamProdjects__item" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="teamProdjects__imgContainer">
+                        <div class="teamProdjects__imgDotsContainer">
+                            <div class="teamProdjects__dots"></div>
+                            <div class="teamProdjects__dots"></div>
+                            <div class="teamProdjects__dots"></div>
+                        </div>
+                        <img src="img/projects/team/it-test.jpg" alt="it test app" width="560" height="306"
+                            class="teamProdjects__image">
+                    </div>
+                    <p class="teamProdjects__nameOfProdject">
+                        Technology: React.js, Node.js
+                    </p>
+                    <button class="teamProdjects__btn accBtn" id="personalProjecItTestBtn">More details —</button>
+                </li>
+            </ul>
+    </section>
+    <!--CALLBACK FORM-->
+    <secttion class="callback" id="callbackSection">
+        <div class="callback__container container" data-aos="fade-down" data-aos-delay="500">
+            <form action="https://echo.htmlacademy.ru" class="callback__callbackForm callbackForm">
+                <h2 class="callbackForm__title">/Are you minding [a project?]
+                </h2>
+                <p class="callbackForm__description descWhite">Leave a request to discuss the task and technical
+                    requirements
+                </p>
+                <div class="callbackForm__inputContainer">
+                    <input class="callbackForm__name callbackFormInput" type="text" name="name" placeholder="Name"
+                        id="callbackFormInputName">
+                    <input class="callbackForm__email callbackFormInput" type="email" name="email" placeholder="Email"
+                        id="callbackFormInputEmail">
+                    <input class="callbackForm__phone callbackFormInput" type="tel" name="phone"
+                        placeholder="+380 (__) ___ - __ - __" id="callbackFormInputPhone">
+                </div>
+                <input class="callbackForm__button accBtn" type="submit" value="Discuss the project —">
+            </form>
+        </div>
+    </secttion>
+    <!--CALCULATOR-->
+    <section class="calculator" id="calculatorSection">
+        <div class="calculator__container container">
+            <div class="calculator__containerLeft">
+                <h2 class="calculator__title title mobileElement" data-aos="fade-right" data-aos-delay="500">Calculate_
+                    the cost of a future project</h2>
+                <h2 class="calculator__title title tabletElement desctopElement" data-aos="fade-right"
+                    data-aos-delay="500">Calculate_<br>the cost of a<br>future
+                    project</h2>
+                <div class="mobileElement" data-aos="fade-right" data-aos-delay="1000">
+                    <p class="calculator__descritption">
+                        <span class="calculator__description_highlight">This is an</span>
+                        <span class="calculator__description_highlight">approximate</span>
+                        <span class="calculator__description_highlight">calculation.</span>
+                    </p>
+                </div>
+                <div class="tabletElement desctopElement" data-aos="fade-right" data-aos-delay="1000">
+                    <p class="calculator__descritption">
+                        <span class="calculator__description_highlight">This is an approximate</span>
+                        <span class="calculator__description_highlight">calculation.</span>
+                    </p>
+                </div>
+                <img src="img/calculator.svg" alt="calculator" width="345" height="215" class="calculator__icon">
+                <p class="calculator__text" data-aos="fade-right" data-aos-delay="1100">/ The final cost depends on the
+                    technical requirements, terms, specifics of
+                    your
+                    project.</p>
+            </div>
+            <form action="https://echo.htmlacademy.ru" class="calculator__form calculatorForm" id="calculatorForm"
+                data-aos="fade-left" data-aos-delay="1000">
+                <div class="calculatorForm__container container">
+                    <div class="calculatorForm__inputContainer">
+                        <label for="calculatorFormWebsiteType" class="calculatorForm__titleLable">What should be done:
+                        </label>
+                        <select class="calculatorForm__select" name="website-type" id="calculatorFormWebsiteType">
+                            <option value="landing-page:200" selected>Landing page</option>
+                            <option value="website:400">Website</option>
+                            <option value="cms:800">CMS</option>
+                            <option value="portal:1000">Portal</option>
+                            <option value="e-shop:800">E-shop</option>
+                        </select>
+                    </div>
+                    <div class="calculatorForm__inputContainer">
+                        <label for="calculatorFormTechnologiesType" class="calculatorForm__titleLable">Choose preferred
+                            technologies</label>
+                        <select class="calculatorForm__select" name="technologies-type"
+                            id="calculatorFormTechnologiesType" multiple>
+                            <option value="html:200" selected>HTML</option>
+                            <option value="css:300" selected>CSS</option>
+                            <option value="js:500">Java Script</option>
+                            <option value="react:1000">React</option>
+                            <option value="angular:1000">Angular</option>
+                        </select>
+                    </div>
+                    <div class="calculatorForm__inputContainer">
+                        <p class="calculatorForm__titleLable">Personal account and shopping cart:</p>
+                        <div class="calculatorForm__radioContainer calculatorFormRadio" id="calculatorFormCart">
+                            <div class="calculatorFormRadio__columnRevers">
+                                <input type="radio" name="cart" value="yes" class="calculatorFormRadio__input"
+                                    id="calculatorFormCartYes" checked>
+                                <label for="calculatorFormCartYes" class="calculatorFormRadio__lable">Yes</label>
+                            </div>
+                            <div class="calculatorFormRadio__columnRevers">
+                                <input type="radio" name="cart" value="no" class="calculatorFormRadio__input"
+                                    id="calculatorFormCartNo">
+                                <label for="calculatorFormCartNo" class="calculatorFormRadio__lable">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" calculatorForm__inputContainer">
+                        <p class="calculatorForm__titleLable">Requests reception on your email:</p>
+                        <div class="calculatorForm__radioContainer calculatorFormRadio" id="calculatorFormReception">
+                            <div class="calculatorFormRadio__columnRevers">
+                                <input type="radio" name="reception" value="yes" class="calculatorFormRadio__input"
+                                    id="calculatorFormReceptionYes" checked>
+                                <label for="calculatorFormReceptionYes" class="calculatorFormRadio__lable">Yes</label>
+                            </div>
+                            <div class="calculatorFormRadio__columnRevers">
+                                <input type="radio" name="reception" value="no" class="calculatorFormRadio__input"
+                                    id="calculatorFormReceptionNo">
+                                <label for="calculatorFormReceptionNo" class="calculatorFormRadio__lable">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculatorForm__inputContainer">
+                        <p class="calculatorForm__titleLable">Cost:</p>
+                        <p class="calculatorForm__totalCost" id="calculatorFormTotalCost">350$</p>
+                    </div>
+                    <input type="submit" value="Find out the cost  —" class="calculatorForm__button accBtn">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer" id="contactsSection">
+        <div class="footer__container container">
+            <div class="footer__containerColumn">
+                <h3 class="footer__title textDarck">Alex Tur</h3>
+                <p class="footer__description textDarck">Frontend Developer</p>
+            </div>
+            <div class="footer__containerColumn">
+                <a href="tel:+380505050505" class="footer__phone textDarck">+38 (050) 505 05 05</a>
+                <a href="mailto:alexturdev@gmail.com" class="footer__mail textDarck">alexturdev@gmail.com</a>
+            </div>
+            <ul class="footer__socialList">
+                <li class="footer__socialItem">
+                    <a href="https://github.com/iKooot" class="footer__socialIcon">Git Hub</a>
+                </li>
+                <li class="footer__socialItem">
+                    <a href="https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D1%81%D0%B0%D0%B2%D1%87%D1%83%D0%BA-18bb981ba/"
+                        class="footer__socialIcon">Linkedin</a>
+                </li>
+                <li class="footer__socialItem">
+                    <a href="https://www.facebook.com/Sergey.Savchuk.psy/" class="footer__socialIcon">Facebook</a>
+                </li>
+                <li class="footer__socialItem">
+                    <a href="https://www.instagram.com/body_therapy_by_savchuk/"
+                        class="footer__socialIcon">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--MODALS-->
+    <div class="modalsWrapper">
+        <!--MOBILE MENU MODAL-->
+        <section class="modal mobileModalMenu" id="mobileModalMenu">
+            <div class="mobileModalMenu__contentWrapper">
+                <div class="mobileModalMenu__container">
+                    <div class="mobileModalMenu__closeIcon modalCloseBtn"></div>
+                    <nav class="mobileModalMenu__navigation">
+                        <ul class="mobileModalMenu__list">
+                            <li class="mobileModalMenu__item">
+                                <a href="#aboutSection" class="mobileModalMenu__link">About</a>
+                            </li>
+                            <li class="mobileModalMenu__item">
+                                <a href="#personalProdjectsSection" class="mobileModalMenu__link">Projects</a>
+                            </li>
+                            <li class="mobileModalMenu__item">
+                                <a href="#calculatorSection" class="mobileModalMenu__link">Cost calculator</a>
+                            </li>
+                            <li class="mobileModalMenu__item">
+                                <a href="#contactsSection" class="mobileModalMenu__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobileModalMenu__contacts">
+                        <a href="tel:+380505050505" class="mobileModalMenu__phone textDarck">+38 (050) 505 05 05</a>
+                        <a href="mailto:alexturdev@gmail.com"
+                            class="mobileModalMenu__mail textDarck">alexturdev@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--VIDEO MODAL-->
+        <section class="modal videoModal" id="videoModal">
+            <div class="videoModal__container modalAreaBgd">
+                <div class="videoModal__closeIcon modalCloseBtn"></div>
+                <video src="video.mp4" class="videoModal__content modalAreaContent" controls></video>
+            </div>
+        </section>
+        <!--MODAL THANK YOU-->
+        <section class="modal thankYouModal modalAreaBgd" id="thankYouModal">
+            <div class="thankYouModal__container modalAreaContent">
+                <div class="thankYouModal__closeIcon modalCloseBtn"></div>
+                <p class="thankYouModal__text">{Thanks}</p>
+                <h3 class="thankYouModal__title">
+                    I've received</br>
+                    your request/</h3>
+                <p class="thankYouModal__description textDarck">I will contact you soon =)</p>
+            </div>
+        </section>
+        <!-- PERSONAL PROJECTS FULL STACK -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjectFullStack">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/personal/full-stack/full-stack-1.png" alt="Full stack photo 1"
+                                width="560" height="301" class="swiper-slide">
+                            <img src="img/projects/personal/full-stack/full-stack-2.png" alt="Full stack photo 2"
+                                width="560" height="301" class="swiper-slide">
+                            <img src="img/projects/personal/full-stack/full-stack-3.png" alt="Full stack photo 3"
+                                width="560" height="301" class="swiper-slide">
+                            <img src="img/projects/personal/full-stack/full-stack-4.png" alt="Full stack photo 4"
+                                width="560" height="301" class="swiper-slide">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tabletElement desctopElement"></div>
+                        <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                    </div>
+
+                    <a href="https://fullstackonline.goit.ua/" class="projectModal__title">Goit Full Stack
+                        разработчик</a>
+
+                    <p class="projectModal__text">
+                        "Одностраничный лендинг с использованием HTML и CSS. Сайт рассказывает
+                        потенциальным клиентам о преимуществах обучения на курсе, программе,
+                        стоимости и длительности занятий.
+                    </p>
+
+                    <p class="projectModal__text">
+                        Также на сайте добавлена форма обратной связи, соцсети и возможность
+                        посмотреть видео-отзывы выпускников, не уходя на внешние ресурсы.
+                        Компактно и в доступной форме дана вся информация о курсе,
+                        преподавателях и процессе обучения. Формат сайта подходит для небольших
+                        компаний или раскрытия информации о конкретном продукте."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL PROJECTS WEDDING -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjectWeddingProject">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <div class="projectModal__scrollable">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <img src="/img/projects/personal/wedding/wedding-1.jpg" alt="Wedding photo 1"
+                                    width="560" height="301" class="swiper-slide">
+                                <img src="/img/projects/personal/wedding/wedding-2.jpg" alt="Wedding photo 2"
+                                    width="560" height="301" class="swiper-slide">
+                                <img src="/img/projects/personal/wedding/wedding-3.jpg" alt="Wedding photo 3"
+                                    width="560" height="301" class="swiper-slide">
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev tabletElement desctopElement"></div>
+                            <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                        </div>
+
+                        <a href="https://www.beeruza.com.ua/" class="projectModal__title">Beeruza - свадебные
+                            пригласительные и аксессуары</a>
+
+                        <p class="projectModal__text">
+                            "Интернет-магазин свадебных принадлежностей. Сайт предназначен для
+                            подготовки к свадьбе. Он экономит время и позволяет купить все
+                            аксессуары для свадьбы в одном месте: приглашения, декор, открытки,
+                            планер. Также можно заказать звонок и задать все вопросы по телефону.
+                        </p>
+
+                        <p class="projectModal__text">
+                            Чтобы приобрести выбранные товары из нужно положить в корзину и оплатить
+                            удобным способом. Формат сайта подходит для бизнеса и продажи товаров."
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- PERSONAL PROJECTS PRO-TEST -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjecProTest">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <div class="projectModal__scrollable">
+                        <div class="projectModal__scrollable">
+                            <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <img src="/img/projects/personal/pro-test/pro-test-1.jpg" alt="Pro test photo 1"
+                                        width="560" height="301" class="swiper-slide">
+                                    <img src="/img/projects/personal/pro-test/pro-test-2.jpg" alt="Pro test photo 2"
+                                        width="560" height="301" class="swiper-slide">
+                                    <img src="/img/projects/personal/pro-test/pro-test-3.jpg" alt="Pro test photo 3"
+                                        width="560" height="301" class="swiper-slide">
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev tabletElement desctopElement"></div>
+                                <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                            </div>
+
+                            <a href="https://pro-test.goit.co.ua/" class="projectModal__title">Pro test - техническая
+                                подготовка
+                                QA</a>
+
+                            <p class="projectModal__text">
+                                Веб-приложение Pro Test поможет начинающему и опытному QA-инженеру
+                                оценить уровень своих знаний. В данном приложении реализована
+                                регистрация и логинизация пользователя через google account, а также
+                                через e-mail и пароль. После чего пользователь может пройти тест и
+                                увидеть его результаты.
+                            </p>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- PERSONAL PROJECTS GOIT -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjecGoit">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <div class="projectModal__scrollable">
+                        <div class="projectModal__scrollable">
+                            <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <img src="/img/projects/personal/goit/goit-1.jpg" alt="Goit photo 1" width="560"
+                                        height="301" class="swiper-slide">
+                                    <img src="/img/projects/personal/goit/goit-2.jpg" alt="Goit photo 2" width="560"
+                                        height="301" class="swiper-slide">
+                                    <img src="/img/projects/personal/goit/goit-3.jpg" alt="Goit photo 3" width="560"
+                                        height="301" class="swiper-slide">
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev tabletElement desctopElement"></div>
+                                <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                            </div>
+
+                            <a href="https://goit.ua/" class="projectModal__title">GoIT - курсы
+                                программирования</a>
+
+                            <p class="projectModal__text">
+                                Многостраничный сайт с использованием HTML, CSS и JavaScript. На сайте
+                                есть форма обратной связи и pop-up, который появляется через 30 секунд
+                                вашего присутствия на сайте.
+                            </p>
+
+                            <p class="projectModal__text">
+                                Также на сайте есть отдельная страница курсов, с последующим переходом
+                                на лендинг каждого отдельного курса. Постоянная рубрика Journal сделана
+                                в виде блога с полезной информацией для начинающих разработчиков.
+                            </p>
+
+                            <p class="projectModal__text">
+                                На сайте есть отзывы выпускников, контакты для связи и события компании.
+                                Кнопка в правом углу переводит пользователя в телеграм-бот, где он может
+                                создать свой собственный сайт с автопроверкой заданий.
+                            </p>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- TEAM PROJECTS Questify -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjecQuestify">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <div class="projectModal__scrollable">
+                        <div class="projectModal__scrollable">
+                            <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <img src="img/projects/team/questify/questify-1.jpg" alt="Questify photo 1"
+                                        width="560" height="301" class="swiper-slide">
+                                    <img src="img/projects/team/questify/questify-1.jpg" alt="Questify photo 2"
+                                        width="560" height="301" class="swiper-slide">
+                                    <img src="img/projects/team/questify/questify-1.jpg" alt="Questify photo 3"
+                                        width="560" height="301" class="swiper-slide">
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev tabletElement desctopElement"></div>
+                                <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                            </div>
+
+                            <a href="https://questify.goit.co.ua/" class="projectModal__title">Questify - turn your life
+                                into a
+                                thrilling game</a>
+
+                            <p class="projectModal__text">
+                                Увлекательное веб-приложение, которое призвано помочь превратить
+                                рутинные задачи в увлекательные квесты и захватывающие челенджи, которые
+                                система сама ставит перед пользователем.
+                            </p>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- TEAM PROJECTS TEST IT -->
+
+        <section class="modal projectModal modalAreaBgd" id="personalProjecItTest">
+            <div class="projectModal__container modalAreaContent">
+                <div class="projectModal__closeIcon modalCloseBtn"></div>
+
+                <div class="projectModal__scrollable">
+                    <div class="projectModal__scrollable">
+                        <div class="projectModal__scrollable">
+                            <div class="projectModal__scrollable">
+                                <!-- Slider main container -->
+                                <div class="swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <img src="img/projects/team/it-test/it-test-1.jpg" alt="It test photo 1"
+                                            width="560" height="301" class="swiper-slide">
+                                        <img src="img/projects/team/it-test/it-test-2.jpg" alt="It test photo 2"
+                                            width="560" height="301" class="swiper-slide">
+                                        <img src="img/projects/team/it-test/it-test-3.jpg" alt="It test photo 3"
+                                            width="560" height="301" class="swiper-slide">
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev tabletElement desctopElement"></div>
+                                    <div class="swiper-button-next tabletElement desctopElement"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar tabletElement desctopElement"></div>
+                                </div>
+
+                                <a href="https://testit.co.ua/" class="projectModal__title">Тест на профессиональную
+                                    личность в
+                                    IT</a>
+
+                                <p class="projectModal__text">
+                                    Web-приложение, которое поможет родителям определиться к какой профессии
+                                    в IT склонен их ребенок.
+                                </p>
+                            </div>
+                        </div>
+        </section>
+
+    </div>
+    <script src="js/choices.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/project-modals.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/callBack-form.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+</body>
+
+</html>
