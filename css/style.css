@@ -61,11 +61,11 @@ body {
 }
 
 .tabletElement {
-  display: none !important;
+  display: none;
 }
 
 .desctopElement {
-  display: none !important;
+  display: none;
 }
 
 .mobileElement {
@@ -1106,7 +1106,7 @@ body {
   }
 
   .tabletElement {
-    display: block !important;
+    display: block;
   }
 
   .swiper-container {
@@ -1342,7 +1342,7 @@ body {
   }
 
   .desctopElement {
-    display: block !important;
+    display: block;
   }
 
   .title {
