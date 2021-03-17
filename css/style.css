@@ -133,7 +133,7 @@ body {
   border: 2px solid var(--c-accent);
   border-radius: 0;
   background-color: transparent;
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: 40px center;
   padding: 12px 45px 12px 55px;
@@ -179,7 +179,7 @@ body {
   height: 20px;
   top: 15px;
   right: 15px;
-  background-image: url("/My-resume-2.0/img/close-gray.svg");
+  background-image: url("../img/close-gray.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,7 +234,7 @@ body {
   height: 30px;
   width: 30px;
   background-color: var(--c-accent);
-  background-image: url("/img/close-white.svg");
+  background-image: url("../img/close-white.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -296,7 +296,7 @@ body {
 .videoModal__closeIcon {
   width: 35px;
   height: 35px;
-  background-image: url(/img/close-dark.svg);
+  background-image: url(../img/close-dark.svg);
   background-color: var(--c-light);
   background-size: 10px 10px;
 }
@@ -432,7 +432,7 @@ body {
   height: 30px;
   background-color: var(--c-accent);
   display: block;
-  background-image: url(/img/menu-icon.svg);
+  background-image: url(../img/menu-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -700,7 +700,7 @@ body {
   width: 20px;
   height: 20px;
   padding-top: 2px;
-  background: url("/My-resume-2.0/img/menu-icon.svg") center/contain no-repeat;
+  background: url("../img/menu-icon.svg") center/contain no-repeat;
 }
 .personalProdjects__btn {
   margin-bottom: 30px;
@@ -1075,16 +1075,16 @@ body {
   margin-right: 0;
 }
 .footer__socialItem:nth-child(1) .footer__socialIcon {
-  background: url("/My-resume-2.0/img/github.svg") center/100% 100% no-repeat;
+  background: url("../img/github.svg") center/100% 100% no-repeat;
 }
 .footer__socialItem:nth-child(2) .footer__socialIcon {
-  background: url("/My-resume-2.0/img/linkedin.svg") center/100% 100% no-repeat;
+  background: url("../img/linkedin.svg") center/100% 100% no-repeat;
 }
 .footer__socialItem:nth-child(3) .footer__socialIcon {
-  background: url("/My-resume-2.0/img/facebook.svg") center/100% 100% no-repeat;
+  background: url("../img/facebook.svg") center/100% 100% no-repeat;
 }
 .footer__socialItem:nth-child(4) .footer__socialIcon {
-  background: url("/My-resume-2.0/img/instagram-sketched.svg") center/100% 100% no-repeat;
+  background: url("../img/instagram-sketched.svg") center/100% 100% no-repeat;
 }
 .footer__socialItem:hover {
   transition: var(--animation-transition-slow);
