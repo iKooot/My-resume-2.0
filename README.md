@@ -1,5 +1,6 @@
 # My-resume-2.0
-My resume by Go IT 
+https://ikooot.github.io/My-resume-2.0/
 
+## My first staps...
 
-My first staps.....
+Thanks GoIT company
